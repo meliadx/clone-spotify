@@ -1,0 +1,21 @@
+/*Personalização do body e coisas gerais*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+}
+
+#suabiblioteca {
+    position: fixed;
+    float: left;
+    background-color: rgba(43, 43, 43, 0.137);
+}
+
+#suabiblioteca-nav > a {
+    color: white;
+}
