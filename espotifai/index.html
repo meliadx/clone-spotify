@@ -7,36 +7,117 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!--"Sua Biblioteca", com links para outras coisas-->
-    <aside id="suabiblioteca">
-        <img id="logo-spotify" src="assets/images/ce9391459a5e4953cf8aa55f41a16447.png">
-        <nav id="suabiblioteca-nav">
-           <a>Home</a><br>
-           <a>Pesquisar</a><br>
-           <a>Sua Biblioteca</a><br>
-        </nav>
-    </aside>
 
-    <!--Principal, com músicas, playlists e recomendações-->
-    <main id="principal">
-        <section id="suabiblioteca">
+    <!--Header contendo logo, usuário e barra de pesquisa-->
+    <header>
+        <img id="espotifai-logo" src="assets/images/icons/espotifai-logo.png">
+        <a href="#">
+            <img id="user" src="assets/images/icons/alfredo.jpg" alt="alfredo">
+        </a>
+    </header>
 
-        </section>
-        <section id="paravoce">
-            <h1 class="titulo-h1">Feito para você</h1>
-            <figure>
-                <img src="assets/images/albuns/ab6765630000ba8a35254d5a6f213d418b83da83.jpg">
-            </figure>
-        </section>
-        <section id="recentes">
+    <div class="container">
+        <!-- "Sua Biblioteca", com links para outras coisas -->
+        <aside>
+            <nav>
+                <a href="#">Home</a><br>
+                <a href="#">Pesquisar</a><br>
+                <a href="#">Sua Biblioteca</a><br>
+                <a href="#">Playlists</a><br>
+                <div class="playlist-container">
+                    <ul class="playlists-lista">
+                        <li>
+                            <img src="assets/images/albums/liked-songs-300.png" alt="Músicas Curtidas">
+                            <h2>Músicas Curtidas</h2>
+                        </li>
+                        <li>
+                            <img src="assets/images/albums/liked-songs-300.png" alt="Músicas Curtidas">
+                            <h2>Músicas Curtidas</h2>
+                        </li>
+                        <li>
+                            <img src="assets/images/albums/liked-songs-300.png" alt="Músicas Curtidas">
+                            <h2>Músicas Curtidas</h2>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
 
-        </section>
-    </main>
+        <!-- Principal, com músicas, playlists e recomendações -->
+        <main>
+            <section class="section-recentes">
+                <ul class="recentes-lista">
+                    <li>
+                        <img src="assets/images/albums/liked-songs-300.png" alt="Músicas Curtidas">
+                        <h2>Músicas Curtidas</h2>
+                    </li>
+                    <li>
+                        <img src="assets/images/albums/placeholder.jfif" alt="Dinheiro Não É Tudo, Mas É 100%">
+                        <h2>Dinheiro Não É Tudo, Mas É 100%</h2>
+                    </li>
+                    <li>
+                        <img src="assets/images/albums/placeholder.jfif" alt="Dinheiro Não É Tudo, Mas É 100%">
+                        <h2>Dinheiro Não É Tudo, Mas É 100%</h2>
+                    </li>
+                    <li>
+                        <img src="assets/images/albums/placeholder.jfif" alt="Dinheiro Não É Tudo, Mas É 100%">
+                        <h2>Dinheiro Não É Tudo, Mas É 100%</h2>
+                    </li>
+                </ul>
+            </section>
 
-    <!--Rodapé, com informações de diretosn autorais e ano-->
-    <footer id="rodape">
+            <h1>Feitos para Alfredo</h1>
+            <section class="section-albuns">
+                <ul class="albuns-lista">
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/albums/placeholder.jfif" alt="Dinheiro Não É Tudo, Mas É 100%">
+                            <h2>Dinheiro Não É Tudo, Mas É 100%</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/albums/placeholder.jfif" alt="Dinheiro Não É Tudo, Mas É 100%">
+                            <h2>Dinheiro Não É Tudo, Mas É 100%</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/albums/placeholder.jfif" alt="Dinheiro Não É Tudo, Mas É 100%">
+                            <h2>Dinheiro Não É Tudo, Mas É 100%</h2>
+                        </a>
+                    </li>
+                </ul>
+            </section>
 
+            <h1>Podcasts</h1>
+            <section class="section-albuns">
+                <ul class="albuns-lista">
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/albums/placeholder.jfif" alt="Dinheiro Não É Tudo, Mas É 100%">
+                            <h2>Dinheiro Não É Tudo, Mas É 100%</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/albums/placeholder.jfif" alt="Dinheiro Não É Tudo, Mas É 100%">
+                            <h2>Dinheiro Não É Tudo, Mas É 100%</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/albums/placeholder.jfif" alt="Dinheiro Não É Tudo, Mas É 100%">
+                            <h2>Dinheiro Não É Tudo, Mas É 100%</h2>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <!-- Rodapé, com informações de direitos autorais e ano -->
+    <footer>
+        
     </footer>
-
 </body>
-</html>

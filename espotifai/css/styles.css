@@ -1,21 +1,212 @@
-/*Personalização do body e coisas gerais*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Fontes, sendo elas parecidas com a do spotify. */
+@font-face {
+    font-family: 'Gotham';
+    src: url('assets/fonts/GothamBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: 'Gotham';
+    src: url('assets/fonts/GothamBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Body, com cor do background e colocando a fonte. */
 body {
-    background-color: rgb(10, 10, 10);
+    font-family: 'Gotham', sans-serif;
+    margin: 1%;
+    background-color: #000000;
 }
 
-#suabiblioteca {
-    position: fixed;
-    float: left;
-    background-color: rgba(43, 43, 43, 0.137);
+/* Personalização do header, onde fica o logo do spotify e conta do usuário. */
+header {
+    display: flex;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #0c0c0cd8;
 }
 
-#suabiblioteca-nav > a {
+header #espotifai-logo {
+    margin-right: auto;
+}
+
+header #user {
+    margin-left: auto;
+    border-radius: 100%;
+    width: 30px; 
+}
+
+#espotifai-logo, #user {
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Tanto para aside quanto para main */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+aside, main {
+    border-radius: 10px;
+}
+
+/* Barra lateral ou sidebar, onde há links que vão para outras partes do site. */
+aside {
+    padding: 10px;
+    margin-right: 10px;
+    height: 97vh;
+    width: 15%;
+    background-color: #121212;
+}
+
+aside nav a {
+    color: #c9c9c9;
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+aside > nav > a:hover {
     color: white;
+    font-size: large;
+}
+
+/* Listando as playlists do usuário à esquerda */
+.playlists-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.playlists-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.playlists-lista li {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.playlists-lista img {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.playlists-lista h2 {
+    font-size: 14px;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* Sections de álbum na tag main */
+main {
+    flex: 1;
+    background-color: #121212;
+    overflow: auto;
+}
+
+h1 {
+    color: white;
+    margin-left: 2%;
+    padding-top: 5%;
+    font-size: 28px;
+}
+
+/* Seção de Recentes */
+.section-recentes {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.recentes-lista {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.recentes-lista li {
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recentes-lista li:hover {
+    background-color: #181818;
+}
+
+.recentes-lista img {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.recentes-lista h2, .playlists-lista h2 {
+    font-size: 14px;
+    margin: 0;
+    color: white;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Seção Feitos para Você e Podcasts */
+.section-albuns {
+    padding: 20px;
+}
+
+.albuns-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.albuns-lista li {
+    flex-direction: column;
+    width: 120px;
+    text-align: center;
+    display: flex;
+}
+
+.albuns-lista li a {
+    text-decoration: none;
+}
+
+.albuns-lista li:hover {
+    background-color: #181818;
+    border-radius: 8px;
+}
+
+.albuns-lista img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.albuns-lista h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+    color: rgba(167, 167, 167, 0.473);
 }
