@@ -1,1 +1,1 @@
-O clone é uma página estática simples do spotify para a aula de Programação Web, feito para revisão.
+Clone visual para uma aula de Programação Web, utilizando apenas o básico de HTML e CSS.
